@@ -1,0 +1,14 @@
+@import '../../utils/variables';
+
+.title {
+    display: flex;
+    align-items: start;
+
+    padding: 35px 0;
+
+    &__content {
+        font-family: $roboto-font;
+        font-weight: $roboto-font-weight-500;
+        font-size: 2.75rem;
+    }
+}

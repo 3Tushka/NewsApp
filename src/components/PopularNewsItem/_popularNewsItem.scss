@@ -1,0 +1,33 @@
+@import '../../utils/variables';
+
+.popular-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    &__author {
+        font-family: $news-font;
+    }
+
+
+    &__link {
+        color: black;
+        text-decoration: none;
+        border-bottom: 3px solid white;
+        max-width: 500px;
+        transition: all 0.15s;
+        padding-bottom: 3px;
+    }
+
+    &__link:hover {
+        text-decoration: solid;
+        border-bottom: 3px solid $background-red;
+    }
+
+    &__title {
+        font-family: $news-font;
+        font-weight: $news-font-weight-600;
+        font-size: 1.6rem;
+    }
+}

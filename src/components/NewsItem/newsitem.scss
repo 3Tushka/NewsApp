@@ -1,0 +1,47 @@
+@import '../../utils/variables';
+
+.news {
+    max-width: 240px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .news-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__item {
+        font-family: $news-font;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 240px;
+        height: 135px;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__h3 {
+            font-weight: $news-font-weight-600;
+            font-size: 1.2rem;
+        }
+
+        &__time {
+            font-weight: $roboto-font-weight-400;
+            font-size: 0.8rem;
+        }
+    }
+}
