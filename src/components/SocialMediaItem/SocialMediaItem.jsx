@@ -1,18 +1,20 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import './_socialItem';
+import './_socialItem.scss';
 
-const SocialMediaItem = ({ title, image }) => {
+const SocialMediaItem = ({ link, title, icon }) => {
     return (
         <>
-            <div className="social-item">
-                <div className="social-item__image">
-                    <img src={image} alt="social-image" />
+            <a href={link} className="social-item">
+                <div className="social-item__icon">
+                    <i>
+                        {icon}
+                    </i>
                 </div>
                 <div className="social-item__title">
                     <span>{title}</span>
                 </div>
-            </div>
+            </a>
         </>
     )
 }

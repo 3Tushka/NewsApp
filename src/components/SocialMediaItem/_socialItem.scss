@@ -1,0 +1,32 @@
+@import '../../utils/variables';
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    text-decoration: none;
+    color: black;
+
+    &__title {
+        font-family: $roboto-font;
+        font-size: 1.3rem;
+        font-weight: $roboto-font-weight-500;
+
+        color: black;
+    }
+}
+
+.social-item:hover {
+    color: $background-red;
+
+    padding: 30px 100px;
+    box-shadow: rgb(38, 57, 77) 0px 22px 32px -12px;
+}

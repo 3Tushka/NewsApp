@@ -8,10 +8,9 @@ import "./_navbar.scss";
 const Menu = () => (
     <>
         <li><Link to="/Homepage">Головна</Link></li>
-        <li><Link to="/RussoUkraineWar">Війна</Link></li>
+        <li><Link to="/Business">Бізнес</Link></li>
         <li><Link to="/History">Історії</Link></li>
         <li><Link to="/Books">Книги</Link></li>
-        <li><Link to="/Podcasts">Подкасти</Link></li>
     </>
 )
 
